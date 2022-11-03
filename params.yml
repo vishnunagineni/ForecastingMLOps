@@ -1,0 +1,21 @@
+base:
+  project: Forecasting
+  target_col: No.of Presents
+tag_config:
+  path: data_given/Tagging.xlsx
+
+data_source:
+  data_path: data_given/Attendance_Aug.xlsx
+processed_data_config:
+  data_path: data/processed/final.csv
+  #test_path: "data/processed/test.csv"
+
+model_dir: saved_models/
+webapp_model_dir: prediction_service/models
+
+mlflow_config:
+  artifacts: artifacts
+  experiment_name: Time Series Forecasting
+
+
+
